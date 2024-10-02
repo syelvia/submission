@@ -36,7 +36,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Membaca file csv
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 all_df['order_purchase_timestamp'] = pd.to_datetime(all_df['order_purchase_timestamp'])
 
 # Menghitung pesanan per kota
